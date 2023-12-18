@@ -18,4 +18,5 @@ const object = {
 }
 
 const {processor, core, gen} = object.quality
-console.log(processor, core, gen);
+const {price} = object;
+console.log(processor, core, gen, price);
