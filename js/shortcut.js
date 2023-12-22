@@ -37,3 +37,41 @@ if (!myValue) { // !myValue means false check
 else {
     console.log('Falsy so print false value', myValue = -60); // this will be 70 coz value is falsey
 }
+
+//shortcuts
+
+let food;
+const money = 80;
+if (money < 100){
+    food ='biscuit';
+}
+else{
+    food = 'biryany';
+}
+
+//shortcut below of uper condition
+// ternary process
+const food2 = money > 100 ? 'biriany' : 'biscuit';
+// console.log(food2);
+
+//onther process
+let drink = (money > 100 && myValue < 100) ? 'biriany' : 'biscuit';
+// console.log(drink);
+
+// number to string converting
+let num = 100;
+let numString = 100 + '';
+console.log('number to string: ',numString);
+
+// String to number convert
+let numStringToNumber = +numString;  // here convert string to number through " +numString " + sign will this work.
+console.log('string to number: ',numStringToNumber);
+
+// another shotcut 
+let isActive = true;
+const showUser = () => {console.log('Display user!')}
+const hideUser = () => {console.log('Hide user!')}
+
+isActive ? showUser() : hideUser();  // another process callded function
+
+isActive && showUser(); // here when isActive is true then showUser will called
