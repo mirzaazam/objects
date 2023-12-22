@@ -73,5 +73,9 @@ const showUser = () => {console.log('Display user!')}
 const hideUser = () => {console.log('Hide user!')}
 
 isActive ? showUser() : hideUser();  // another process callded function
-
 isActive && showUser(); // here when isActive is true then showUser will called
+isActive || hideUser(); // here when isActive is false then hideUser will executed
+
+//toggle boolean
+isActive = !isActive;
+console.log(isActive)
