@@ -21,4 +21,3 @@ const {processor, core, gen} = object.quality
 const {price} = object;
 console.log(processor, core, gen, price);
 
-
